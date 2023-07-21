@@ -23,6 +23,7 @@ En Git, la Staging Area y el Repositorio Local son dos conceptos fundamentales r
 - **Repositorio Local**: Es donde se almacenan todos los cambios y versiones de tu proyecto. Es básicamente una base de datos que guarda el historial de commits y la información necesaria para reconstruir cualquier versión anterior del proyecto.
 
 Cuando realizas un commit en Git, los cambios en la Staging Area se guardan permanentemente en el repositorio local. Cada commit tiene un identificador único (hash) y contiene una instantánea del estado de tu proyecto en ese momento.
+
 ## Lista de comandos más utilizados
 
 ```bash
@@ -44,3 +45,34 @@ git remote add [nombre] [url]   # Agrega un nuevo repositorio remoto con un nomb
 git reset hard [idcommit]       # Restaura a la copia seleccionada.
 
 ```
+
+## Comando git status -s
+Proporciona información sobre los cambios en el área de preparación (Staging Area) y en el directorio de trabajo.
+La salida del comando git status -s se muestra en un formato más compacto, y cada línea representa un archivo modificado. El resultado tiene dos columnas:
+
+- La primera columna indica el estado de los archivos en el área de preparación (Staging Area).
+- La segunda columna indica el estado de los archivos en el directorio de trabajo (Working Directory).
+
+- **A:** El archivo se agregó a la Staging Area (nuevo archivo en la Staging Area).
+- **M:** El archivo se modificó y se agregó a la Staging Area (archivo modificado en la Staging Area).
+- **D:** El archivo se eliminó de la Staging Area (archivo eliminado de la Staging Area).
+- **R:** El archivo se ha renombrado y se agregó a la Staging Area.
+- **C:** El archivo ha tenido conflictos de fusión que necesitan ser resueltos.
+- **??:** El archivo es un archivo no rastreado, es decir, es un archivo nuevo en el directorio de trabajo y no se ha agregado a la Staging Area.
+
+## Ramas o Branches
+En Git, las ramas son líneas de desarrollo independientes que permiten a los desarrolladores trabajar en diferentes versiones del código de forma paralela. Cada repositorio tiene al menos una rama principal, generalmente llamada "main" o "master". Las ramas adicionales se crean para desarrollar funcionalidades, solucionar problemas o trabajar en cambios específicos sin afectar la rama principal.
+
+Ventajas de las ramas en Git:
+
+- **Desarrollo paralelo**: Varios desarrolladores pueden trabajar simultáneamente en diferentes características o problemas sin interferir entre sí.
+
+- **Funcionalidades aisladas**: Las ramas permiten desarrollar nuevas funcionalidades de manera aislada para pruebas y revisión antes de fusionarlas con la rama principal.
+
+- **Arreglo de problemas**: Las ramas también se utilizan para solucionar errores, aislando el código necesario para corregir el problema y realizar pruebas antes de la fusión.
+
+- **Versiones estables**: La rama principal se considera la versión estable del proyecto, mientras que las ramas de desarrollo contienen características en progreso o cambios experimentales.
+
+## Tags
+Los tags en Git son referencias estáticas que se utilizan para marcar puntos específicos en la historia del repositorio, como versiones de software o lanzamientos importantes. Son etiquetas fijas que apuntan a commits específicos y facilitan la identificación y referencia de hitos significativos en el desarrollo del proyecto.
+  
