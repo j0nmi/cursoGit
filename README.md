@@ -48,11 +48,12 @@ git reset hard [idcommit]       # Restaura a la copia seleccionada.
 
 ## Comando git status -s
 Proporciona información sobre los cambios en el área de preparación (Staging Area) y en el directorio de trabajo.
-La salida del comando git status -s se muestra en un formato más compacto, y cada línea representa un archivo modificado. El resultado tiene dos columnas:
+La salida del comando git status -s se muestra en un formato más compacto, y cada línea representa un archivo modificado. 
+El resultado tiene dos columnas: 
+- El estado de los archivos en el área de preparación (Staging Area).
+- El estado de los archivos en el directorio de trabajo (Working Directory).
 
-- La primera columna indica el estado de los archivos en el área de preparación (Staging Area).
-- La segunda columna indica el estado de los archivos en el directorio de trabajo (Working Directory).
-
+Los códigos más comunes que se muestran en la salida son:
 - **A:** El archivo se agregó a la Staging Area (nuevo archivo en la Staging Area).
 - **M:** El archivo se modificó y se agregó a la Staging Area (archivo modificado en la Staging Area).
 - **D:** El archivo se eliminó de la Staging Area (archivo eliminado de la Staging Area).
@@ -74,5 +75,5 @@ Ventajas de las ramas en Git:
 - **Versiones estables**: La rama principal se considera la versión estable del proyecto, mientras que las ramas de desarrollo contienen características en progreso o cambios experimentales.
 
 ## Tags
-Los tags en Git son referencias estáticas que se utilizan para marcar puntos específicos en la historia del repositorio, como versiones de software o lanzamientos importantes. Son etiquetas fijas que apuntan a commits específicos y facilitan la identificación y referencia de hitos significativos en el desarrollo del proyecto.
+Los tags en Git son referencias estáticas que se utilizan para marcar puntos específicos en la historia del repositorio, como versiones de software o lanzamientos importantes.
   
